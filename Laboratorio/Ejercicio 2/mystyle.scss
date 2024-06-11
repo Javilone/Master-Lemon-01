@@ -1,0 +1,42 @@
+@use "base";
+@use "theme01" as *;
+// @use "theme02" as *;
+
+body {
+  @include base.flex-aligned;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-1 {
+  @include box-1-style;
+}
+
+.box-2 {
+  @include box-2-style;
+}
+
+.box-3 {
+  @include box-3-style;
+}
+
+.box-4 {
+  @include box-4-style;
+}
+
+.text-1{
+  @include text-1;
+  padding: 0;
+}
+
+.text-2{
+  @include text-2;
+  padding: 0;
+}
+
+.box-5 {
+  @include box-5-style;
+}

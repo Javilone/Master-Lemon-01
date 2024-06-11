@@ -1,0 +1,66 @@
+$bg-color-1: red;
+$bg-color-2: darkred;
+$bg-color-3: lightpink;
+$bg-color-5: white;
+
+
+@mixin box-base {
+    width: 140px;
+    height: 90px;
+    text-align: left;
+    border-radius: 5px;
+    margin: 1px 0;
+    border: 1px solid black;
+}
+
+@mixin box-style {
+    @include box-base;
+    @include text-2;
+}
+
+@mixin box-1-style {
+    background-color: $bg-color-1;
+    @include box-base;
+    @include text-2;
+}
+
+@mixin box-2-style {
+    background-color: $bg-color-2;
+    @include box-base;
+    @include text-2;
+}
+
+@mixin box-3-style {
+    background-color: $bg-color-3;
+    @include box-base;
+    @include text-2;
+}
+
+@mixin box-4-style {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @include box-base;
+    border: none;
+}
+
+@mixin box-5-style {
+    background-color: $bg-color-5;
+    border: 1px solid black;
+    box-shadow: -9px 9px 10px 0px;
+    @include box-base;
+    @include text-2;
+
+}
+
+@mixin text-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin text-2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 20px 20px;
+}

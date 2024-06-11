@@ -1,0 +1,69 @@
+@use "base" as *;
+
+body {
+  @include flex-aligned;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+// Toda clase que contenga "container" en su nombre
+[class*=container] {
+  @include flex-aligned;
+  width: 100%;
+
+  // Que tenga dentro la clase .box y .base-color
+  .box {
+    @include flex-aligned;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+  }
+
+  .base-color {
+    width: 100px;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.color-box-text {
+  text-align: center;
+}
+
+//-------------------------------------------------------------------------------//
+// YO DEL FUTURO: La asignación del color a las filas las pude hacer con un      //
+// bucle for. Pero tuve problemas para asignar el darken o lighten en el bucle   //
+// @while porque los colores los estaba tomando de una matriz de colores.        // 
+// Al final me decanté por manejar cada container por separado. (NO RESUELTO).   //
+//-------------------------------------------------------------------------------//
+
+.container-1 {
+  .box{
+    background-color: $color-1;
+  }
+
+  @include darken-container-1;
+  @include lighten-container-1;
+}
+
+.container-2 {
+  .box{
+    background-color: $color-2;
+  }
+
+  @include darken-container-2;
+  @include lighten-container-2;
+}
+
+.container-3 {
+  .box{
+    background-color: $color-3;
+  }
+
+  @include darken-container-3;
+  @include lighten-container-3;
+}

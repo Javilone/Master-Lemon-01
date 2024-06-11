@@ -1,0 +1,79 @@
+// Aquí declararé todas las variables y funciones, etc 
+// Las variables en SAAS son $mivariable. *Piensa como en programación.*
+
+$color-1: orangered;
+$color-2: cornflowerblue;
+$color-3: green;
+$text-color-effect: gray;
+
+@mixin flex-aligned {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin darken-container-1 {
+    $value: 4;
+    @while $value >= 1 {
+        .darken-#{$value}{
+            background-color: darken($color-1, $value * 10%);
+            color: $text-color-effect;
+        }
+    $value: $value - 1;
+    }
+}
+
+@mixin lighten-container-1 {
+    $value: 1;
+    @while $value <= 4 {
+        .lighten-#{$value}{
+                background-color: lighten($color-1, $value * 10%);
+                color: $text-color-effect;
+        }
+    $value: $value + 1;
+    }
+}
+
+@mixin darken-container-2 {
+    $value: 4;
+    @while $value >= 1 {
+        .darken-#{$value}{
+            background-color: darken($color-2, $value * 10%);
+            color: $text-color-effect;
+        }
+    $value: $value - 1;
+    }
+}
+
+@mixin lighten-container-2 {
+    $value: 1;
+    @while $value <= 4 {
+        .lighten-#{$value}{
+            background-color: lighten($color-2, $value * 10%);
+            color: $text-color-effect;
+        }
+    $value: $value + 1;
+    }
+}
+
+@mixin darken-container-3 {
+    $value: 4;
+    @while $value >= 1 {
+        .darken-#{$value}{
+            background-color: darken($color-3, $value * 10%);
+            color: $text-color-effect;
+        }
+    $value: $value - 1;
+    }
+}
+
+@mixin lighten-container-3 {
+    $value: 1;
+    @while $value <= 4 {
+        .lighten-#{$value}{
+            background-color: lighten($color-3, $value * 10%);
+            color: $text-color-effect;
+        }
+    $value: $value + 1;
+    }
+}
