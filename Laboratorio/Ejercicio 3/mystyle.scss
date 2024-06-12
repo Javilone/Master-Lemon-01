@@ -25,8 +25,6 @@ p {
   font-family: $font-family;
   color: white;
   text-align: center;
-
-  @media screen and ()
 }
 
 .button {
@@ -37,5 +35,25 @@ p {
   &:hover {
     background-color: $bg-color-secondary;
     cursor: pointer;
+  }
+}
+
+@media (min-width: $desktop){
+  .nav {
+    width: 100%;
+  }
+
+  p {
+    padding-left: 10px;
+  }
+
+  .container {
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+  }
+
+  .button {
+    width: 100px;
   }
 }
