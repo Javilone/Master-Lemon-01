@@ -35,5 +35,5 @@ Crear la barra de navegación responsiva de la imagen usando Flexbox.
 ### Ejercicio 4 - Completo.
 Crear un elemento de tipo card con Grid CSS.
 
+<img width="400" alt="Captura de pantalla 2024-06-12 a las 10 30 03" src="https://github.com/Javilone/Master-Lemon-01/assets/97972589/f0ecf8c7-29da-4787-bb3d-8f8e2dbe6d6a">
 
-<img width="300" alt="Captura de pantalla del ejercicio 4" src="https://github.com/Javilone/Master-Lemon-01/assets/97972589/d62270ab-1da1-444f-b1ed-c1c99abcd481">
