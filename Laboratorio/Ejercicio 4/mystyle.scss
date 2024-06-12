@@ -75,12 +75,12 @@ body {
 }
 
 .more-info {
+  display: grid;
   font-family: $font-more-info-family;
   font-size: $font-more-info-size;
   font-weight: $font-more-info-weight;
   text-align: center;
-  vertical-align: middle;
-  line-height: 30px;
+  align-items: center;
   color: white;
   background-color: rgba(78, 180, 47, 0.848);
   height: 80px;
