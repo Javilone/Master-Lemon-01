@@ -1,6 +1,6 @@
 @use "base";
-// @use "theme01" as *;
-@use "theme02" as *;
+@use "theme01" as *;
+// @use "theme02" as *;
 
 body {
   @include base.flex-aligned;
