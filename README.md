@@ -23,8 +23,8 @@ Crear dos temas distintos y mostrar los resultados en una página.
 
 Para visualizar los cambios debería ser suficiente importar un tema u otro en el fichero de estilos principal.
 
-<img width="220" alt="Captura de pantalla del ejercicio 2" src="https://github.com/Javilone/Master-Lemon-01/assets/97972589/06f2a945-994a-4d0c-bdbe-321b2d7c5177">
-<img width="200" alt="Captura de pantalla 2 del ejercicio 2" src="https://github.com/Javilone/Master-Lemon-01/assets/97972589/6b1b0902-7c0a-417e-be5a-8a5bf449b2b5">
+<img width="200" alt="Captura de pantalla del ejercicio 2" src="https://github.com/Javilone/Master-Lemon-01/assets/97972589/a1e1fe1d-4a8c-45b0-af85-bd08815f5104">
+<img width="200" alt="Captura de pantalla 2 del ejercicio 2" src="https://github.com/Javilone/Master-Lemon-01/assets/97972589/b2195b2c-b28e-411a-9194-ba74744b5767">
 
 ### Ejercicio 3 - Completo.
 Crear la barra de navegación responsiva de la imagen usando Flexbox.
