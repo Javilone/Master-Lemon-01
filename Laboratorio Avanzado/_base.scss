@@ -43,6 +43,7 @@ $grid-responsive-columns: 3;
     img{
         min-width: 250px;
         width: 100%;
+        object-fit: cover;
         transition: 1s;
 
         &:hover{
